@@ -116,7 +116,7 @@ BOOL state;
 	[_konashi removeAllObjects];
 	[self.tableView reloadData];
 	
-	[Konashi findAny:^(NSArray *array) {
+	[Konashi discover:^(NSArray *array) {
 		NSLog(@"%@", [array description]);
 	} timeoutBlock:^(NSArray *array) {
 		_objects = [array copy];
