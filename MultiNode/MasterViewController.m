@@ -93,14 +93,18 @@ BOOL state;
 {
 	if (state) {
 		[_konashi enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-			Konashi *k = (Konashi *)obj;
-			[k digitalWrite:KonashiLED3 value:KonashiLevelLow];
+			__weak Konashi *k = (Konashi *)obj;
+			dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+				[k digitalWrite:KonashiLED3 value:KonashiLevelLow];
+			});
 		}];
 	}
 	else {
 		[_konashi enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-			Konashi *k = (Konashi *)obj;
-			[k digitalWrite:KonashiLED3 value:KonashiLevelHigh];
+			__weak Konashi *k = (Konashi *)obj;
+			dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+				[k digitalWrite:KonashiLED3 value:KonashiLevelHigh];
+			});
 		}];
 	}
 	state = !state;
@@ -116,7 +120,7 @@ BOOL state;
 	[_konashi removeAllObjects];
 	[self.tableView reloadData];
 	
-	[Konashi discover:^(NSArray *array) {
+	[Konashi discover:^(NSArray *array, BOOL *stop) {
 		NSLog(@"%@", [array description]);
 	} timeoutBlock:^(NSArray *array) {
 		_objects = [array copy];
@@ -124,7 +128,7 @@ BOOL state;
 			[self.tableView reloadData];
 			[self.refreshControl endRefreshing];
 		});
-	} timeoutInterval:3];
+	} timeoutInterval:10];
 }
 
 @end
