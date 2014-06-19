@@ -1,0 +1,3 @@
+[submodule "MultiNode/Submodule/Konashi"]
+	path = MultiNode/Submodule/Konashi
+	url = git@github.com:0x0c/konashi-ios-sdk.git

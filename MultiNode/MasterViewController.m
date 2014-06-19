@@ -58,8 +58,15 @@
 	if (cell == nil) {
 		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
 	}
+	cell.accessoryType = UITableViewCellAccessoryNone;
 	
 	CBPeripheral *p = _objects[indexPath.row];
+	for (Konashi *k in _konashi) {
+		if ([k.peripheralName isEqualToString:p.name]) {
+			cell.accessoryType = UITableViewCellAccessoryCheckmark;
+			break;
+		}
+	}
 	cell.textLabel.text = p.name;
 	
     return cell;
@@ -67,8 +74,24 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+	CBPeripheral *p = _objects[indexPath.row];
 	__weak UITableView *t = tableView;
 	__weak UITableViewCell *c = [tableView cellForRowAtIndexPath:indexPath];
+	for (Konashi *k in _konashi) {
+		if ([k.peripheralName isEqualToString:p.name]) {
+			if (c.tag == 0) {
+				c.tag = 1;
+				[k digitalWrite:KonashiLED2 value:KonashiLevelLow];
+			}
+			else {
+				c.tag = 0;
+				[k digitalWrite:KonashiLED2 value:KonashiLevelHigh];
+			}
+			
+			[tableView deselectRowAtIndexPath:indexPath animated:YES];
+			return;
+		}
+	}
 	Konashi *konashi = [Konashi createKonashiWithConnectedHandler:^(Konashi *k) {
 		NSLog(@"connected:%@", [k description]);
 	} disconnectedHandler:^(Konashi *k) {
@@ -83,7 +106,6 @@
 		c.accessoryType = UITableViewCellAccessoryCheckmark;
 		[t deselectRowAtIndexPath:indexPath animated:YES];
 	}];
-	CBPeripheral *p = _objects[indexPath.row];
 	[konashi connectWithName:p.name];
 	[_konashi addObject:konashi];
 }
