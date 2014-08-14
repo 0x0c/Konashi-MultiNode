@@ -21,7 +21,7 @@
 		E9559A3C194CAE0E00628114 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9559A1B194CAE0E00628114 /* UIKit.framework */; };
 		E9559A44194CAE0E00628114 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E9559A42194CAE0E00628114 /* InfoPlist.strings */; };
 		E9559A46194CAE0E00628114 /* MultiNodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9559A45194CAE0E00628114 /* MultiNodeTests.m */; };
-		E9AD4E31194D975A001AAB7E /* Konashi.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AD4E2F194D975A001AAB7E /* Konashi.m */; };
+		E9AEE94E199D5A0A0082DE45 /* Konashi.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AEE94D199D5A0A0082DE45 /* Konashi.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,9 +54,8 @@
 		E9559A41194CAE0E00628114 /* MultiNodeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MultiNodeTests-Info.plist"; sourceTree = "<group>"; };
 		E9559A43194CAE0E00628114 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E9559A45194CAE0E00628114 /* MultiNodeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiNodeTests.m; sourceTree = "<group>"; };
-		E9AD4E2E194D975A001AAB7E /* Konashi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Konashi.h; sourceTree = "<group>"; };
-		E9AD4E2F194D975A001AAB7E /* Konashi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Konashi.m; sourceTree = "<group>"; };
-		E9AD4E30194D975A001AAB7E /* KonashiDb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KonashiDb.h; sourceTree = "<group>"; };
+		E9AEE94C199D5A0A0082DE45 /* Konashi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Konashi.h; path = "Submodule/konashi-ios-sdk/Konashi/Konashi/Konashi.h"; sourceTree = "<group>"; };
+		E9AEE94D199D5A0A0082DE45 /* Konashi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Konashi.m; path = "Submodule/konashi-ios-sdk/Konashi/Konashi/Konashi.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +115,8 @@
 		E9559A1D194CAE0E00628114 /* MultiNode */ = {
 			isa = PBXGroup;
 			children = (
-				E9AD4E2D194D975A001AAB7E /* Konashi */,
+				E9AEE94C199D5A0A0082DE45 /* Konashi.h */,
+				E9AEE94D199D5A0A0082DE45 /* Konashi.m */,
 				E9559A26194CAE0E00628114 /* AppDelegate.h */,
 				E9559A27194CAE0E00628114 /* AppDelegate.m */,
 				E9559A29194CAE0E00628114 /* Main.storyboard */,
@@ -155,17 +155,6 @@
 				E9559A42194CAE0E00628114 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		E9AD4E2D194D975A001AAB7E /* Konashi */ = {
-			isa = PBXGroup;
-			children = (
-				E9AD4E2E194D975A001AAB7E /* Konashi.h */,
-				E9AD4E2F194D975A001AAB7E /* Konashi.m */,
-				E9AD4E30194D975A001AAB7E /* KonashiDb.h */,
-			);
-			name = Konashi;
-			path = Submodule/Konashi/Konashi;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,7 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9559A28194CAE0E00628114 /* AppDelegate.m in Sources */,
-				E9AD4E31194D975A001AAB7E /* Konashi.m in Sources */,
+				E9AEE94E199D5A0A0082DE45 /* Konashi.m in Sources */,
 				E9559A2E194CAE0E00628114 /* MasterViewController.m in Sources */,
 				E9559A24194CAE0E00628114 /* main.m in Sources */,
 			);
