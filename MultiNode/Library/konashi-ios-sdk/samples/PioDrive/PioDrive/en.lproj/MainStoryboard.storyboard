@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7eT-Q6-DAp"/>
+                        <viewControllerLayoutGuide type="bottom" id="JG6-P0-54E"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PD0-g5-I9l">
+                                <rect key="frame" x="20" y="31" width="122" height="30"/>
+                                <state key="normal" title="Find">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="find:" destination="2" eventType="touchUpInside" id="aI9-P2-wBe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6UN-Kz-PHR">
+                                <rect key="frame" x="99" y="93" width="122" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="122" id="VZh-zu-m1j"/>
+                                </constraints>
+                                <state key="normal" title="Disconnect">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="disconnect:" destination="2" eventType="touchUpInside" id="tvz-go-WEy"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g1T-LR-T1s">
+                                <rect key="frame" x="45" y="229" width="38" height="30"/>
+                                <state key="normal" title="LED3">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="downLed3:" destination="2" eventType="touchDown" id="R5N-ru-Qu6"/>
+                                    <action selector="upLed3:" destination="2" eventType="touchUpInside" id="dRv-uJ-oTO"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ac1-yk-Zu6">
+                                <rect key="frame" x="141" y="229" width="38" height="30"/>
+                                <state key="normal" title="LED4">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="downLed4:" destination="2" eventType="touchDown" id="G4H-n3-MZn"/>
+                                    <action selector="upLed4:" destination="2" eventType="touchUpInside" id="fzG-wF-unB"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OGC-hD-5cf">
+                                <rect key="frame" x="237" y="229" width="38" height="30"/>
+                                <state key="normal" title="LED5">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="downLed5:" destination="2" eventType="touchDown" id="Sn8-1e-kcn"/>
+                                    <action selector="upLed5:" destination="2" eventType="touchUpInside" id="c1y-9U-9QP"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="基板のスイッチを押すとLED1点灯" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGw-wf-i9M">
+                                <rect key="frame" x="30" y="329" width="261" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zjy-b4-pMW">
+                                <rect key="frame" x="178" y="31" width="122" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Find2">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="find2:" destination="2" eventType="touchUpInside" id="WWE-Cu-QIf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PD0-g5-I9l" firstAttribute="top" secondItem="3" secondAttribute="top" constant="31" id="0zt-TZ-Ct3"/>
+                            <constraint firstItem="6UN-Kz-PHR" firstAttribute="centerX" secondItem="PD0-g5-I9l" secondAttribute="centerX" constant="79" id="1es-Zk-uZW"/>
+                            <constraint firstItem="6UN-Kz-PHR" firstAttribute="centerX" secondItem="Ac1-yk-Zu6" secondAttribute="centerX" id="28l-5w-z28"/>
+                            <constraint firstItem="g1T-LR-T1s" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="45" id="7cW-n1-Ewj"/>
+                            <constraint firstItem="6UN-Kz-PHR" firstAttribute="top" secondItem="3" secondAttribute="top" constant="93" id="8ag-gR-XN5"/>
+                            <constraint firstItem="wGw-wf-i9M" firstAttribute="centerX" secondItem="Ac1-yk-Zu6" secondAttribute="centerX" id="F0e-rn-j3m"/>
+                            <constraint firstAttribute="trailing" secondItem="OGC-hD-5cf" secondAttribute="trailing" constant="45" id="FNL-Hh-u27"/>
+                            <constraint firstItem="Ac1-yk-Zu6" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" id="Ifb-AH-BYQ"/>
+                            <constraint firstItem="OGC-hD-5cf" firstAttribute="baseline" secondItem="Ac1-yk-Zu6" secondAttribute="baseline" id="Pri-MF-PYC"/>
+                            <constraint firstItem="6UN-Kz-PHR" firstAttribute="leading" secondItem="PD0-g5-I9l" secondAttribute="leading" constant="79" id="WHV-PJ-Uof"/>
+                            <constraint firstItem="Ac1-yk-Zu6" firstAttribute="baseline" secondItem="g1T-LR-T1s" secondAttribute="baseline" id="m3x-2x-hnx"/>
+                            <constraint firstItem="g1T-LR-T1s" firstAttribute="top" secondItem="3" secondAttribute="top" constant="229" id="ss8-ce-Vio"/>
+                            <constraint firstAttribute="bottom" secondItem="wGw-wf-i9M" secondAttribute="bottom" constant="218" id="v0G-6f-X2h"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="led3" destination="g1T-LR-T1s" id="JR6-Bb-uUd"/>
+                        <outlet property="led4" destination="Ac1-yk-Zu6" id="mRv-Ec-Nwh"/>
+                        <outlet property="led5" destination="OGC-hD-5cf" id="ZZX-9E-9ef"/>
+                        <outlet property="pioMessage" destination="wGw-wf-i9M" id="4Js-cm-0Md"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

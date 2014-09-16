@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>46F51DA0-1E18-403E-BCC9-EC4BB1EC81DB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>I2cSample</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>65BCC72C-2FF9-4B0C-A6B2-1F4C70E957FF</key>
+		<string>ssh://github.com/0x0c/konashi-ios-sdk.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>samples/I2cSample/I2cSample.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>65BCC72C-2FF9-4B0C-A6B2-1F4C70E957FF</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/0x0c/konashi-ios-sdk.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>65BCC72C-2FF9-4B0C-A6B2-1F4C70E957FF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>65BCC72C-2FF9-4B0C-A6B2-1F4C70E957FF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>konashi-ios-sdk</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>DB1F1E82-91DF-4360-8D30-3A0C09084CE2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PioDrive</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E08FF0D3-A562-44AF-AE3E-91DCC99947E3</key>
+		<string>ssh://github.com/0x0c/konashi-ios-sdk.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>samples/PioDrive/PioDrive.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E08FF0D3-A562-44AF-AE3E-91DCC99947E3</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/0x0c/konashi-ios-sdk.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E08FF0D3-A562-44AF-AE3E-91DCC99947E3</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E08FF0D3-A562-44AF-AE3E-91DCC99947E3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>konashi-ios-sdk</string>
+		</dict>
+	</array>
+</dict>
+</plist>
